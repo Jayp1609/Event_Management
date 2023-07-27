@@ -1,0 +1,61 @@
+.card-main {
+  width: 300px;
+  background-color: rgb(255, 238, 208);
+  background-image: linear-gradient(
+    rgb(255, 222, 198),
+    rgb(255, 222, 198),
+    rgb(255, 222, 198),
+    rgb(255, 229, 210),
+    rgb(255, 240, 230),
+    rgb(255, 202, 165)
+  );
+  border-radius: 10px;
+}
+.card-main img {
+  width: 300px;
+  height: 150px;
+}
+.part-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.part-2 div {
+  width: 250px;
+  background-color: rgba(128, 128, 128, 0.164);
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+}
+.part-3 {
+  padding: 20px 10px 20px 10px;
+}
+.part-3 .flex {
+  display: flex;
+}
+.part-3 .flex img {
+  width: 18px;
+  height: 18px;
+}
+.part-3 .flex b {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.part-4 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.part-4 button {
+  background-color: rgb(87, 54, 0);
+  color: white;
+  width: 180px;
+  height: 40px;
+  border: none;
+}
+.part-4 button:hover {
+  cursor: pointer;
+  background-color: rgb(164, 101, 0);
+}

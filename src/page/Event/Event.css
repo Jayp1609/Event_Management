@@ -1,0 +1,48 @@
+.event-main {
+  /* background-image: linear-gradient(black, rgb(30, 30, 30), black); */
+  background-image: linear-gradient(to right, rgb(0, 38, 85), black);
+}
+.event-main .back-image {
+  width: 100%;
+}
+.event-main .back-image img {
+  width: 100%;
+  height: 350px;
+  z-index: 0;
+}
+.image-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  margin-top: -270px;
+  color: white;
+}
+.event-main h1 {
+  color: white;
+}
+.event-main .flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.event-main .category {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-bottom: 200px;
+}
+.event-main .category img {
+  width: 300px;
+  height: 300px;
+}
+.event-main .category div b {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+}
+.event-main .category:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

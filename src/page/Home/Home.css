@@ -1,0 +1,263 @@
+.back-1 {
+  padding-left: 80px;
+  padding-top: 40px;
+  /* background-image: linear-gradient(
+    rgb(0, 90, 200),
+    rgb(0, 90, 158),
+    rgb(0, 90, 128)
+  ); */
+  /* background-image: url(https://images.pexels.com/photos/1652361/pexels-photo-1652361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+  background-image: url(https://images.pexels.com/photos/1190299/pexels-photo-1190299.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+.back-1 h1 {
+  font-size: 50px;
+  background: linear-gradient(
+    to right,
+    rgb(248, 144, 255),
+    rgb(255, 139, 89),
+    rgb(255, 139, 89),
+    rgb(255, 94, 0)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.back-1 p {
+  color: rgb(128, 208, 255);
+  line-height: 25px;
+}
+.back-1 form input {
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  padding-left: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.332);
+  color: white;
+}
+.back-1 form input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.back-1 form button {
+  height: 33px;
+  width: 100px;
+  background-color: rgba(255, 68, 0, 0.832);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  border: none;
+}
+.back-1 form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.back-1 b {
+  background: linear-gradient(to right, rgb(250, 186, 255), rgb(255, 162, 109));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.back-2 {
+  background-image: linear-gradient(rgb(3, 33, 70), black);
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+.back-2 .logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.back-2 .back2-box {
+  display: flex;
+  justify-content: center;
+}
+.back-2 .back2-box-flex {
+  width: 80%;
+  background-color: rgb(6, 56, 117);
+  padding: 40px;
+  margin-top: 100px;
+}
+
+.back-2 .back2-box-flex .line-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.back-2 .back2-box-flex .line-1 hr {
+  height: 5px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(224, 69, 255),
+    rgb(255, 133, 89)
+  );
+  float: left;
+}
+.back-2 .back2-box-flex .line-1 h3 {
+  color: white;
+  margin-top: 0%;
+}
+.back-2 .back2-box-flex .line-1 p {
+  color: rgb(128, 208, 255);
+  line-height: 20px;
+  font-size: 13px;
+  margin-top: 0px;
+}
+.back-2 .back2-box-flex .line-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.back-2 .back2-box-flex .line-2 h1 {
+  background: linear-gradient(to right, rgb(150, 69, 255), rgb(255, 133, 89));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.back-2 .back2-box-flex .line-2 p {
+  color: rgb(186, 50, 0);
+  margin-top: 30px;
+}
+.back-2 .back2-box-flex .line-3 {
+  padding-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.back-2 .back2-box-flex .line-3 hr {
+  height: 5px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(224, 69, 255),
+    rgb(255, 133, 89)
+  );
+  float: left;
+}
+.back-2 .back2-box-flex .line-3 h3 {
+  margin-top: 0px;
+  color: white;
+}
+.back-2 .back2-box-flex .line-3 p {
+  color: rgb(128, 208, 255);
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.back-2 .back2-quote {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.back-2 .back2-quote .left {
+  margin-top: -20px;
+}
+.back-2 .back2-quote .left h2 {
+  line-height: 35px;
+  background: linear-gradient(to right, rgb(150, 69, 255), rgb(255, 133, 89));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.back-2 .back2-quote .right .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.back-2 .back2-quote .right .flex hr {
+  height: 5px;
+  width: 50px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(224, 69, 255),
+    rgb(255, 133, 89)
+  );
+  float: left;
+}
+.back-2 .back2-quote .right .flex h4 {
+  color: white;
+  width: 200px;
+}
+.back-2 .back2-quote .right .flex p {
+  color: rgb(128, 208, 255);
+  width: 400px;
+  line-height: 24px;
+}
+
+.back-2 .back2-box2 {
+  display: flex;
+  justify-content: center;
+}
+.back-2 .back2-box2 .flex {
+  width: 80%;
+  background-image: linear-gradient(to right, plum, rgb(255, 133, 89));
+  padding: 20px 40px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+.back-2 .back2-box2 .flex .left {
+  color: white;
+}
+.back-2 .back2-box2 .flex .right {
+  display: flex;
+  align-items: center;
+}
+.back-2 .back2-box2 .flex .right button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.back-2 .back2-box2 .flex .right button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.footer {
+  background-color: rgb(3, 33, 70);
+  padding: 40px;
+}
+.footer .part-1 {
+  text-align: center;
+}
+.footer .part-1 h1 {
+  font-size: 50px;
+  background: linear-gradient(to right, rgb(150, 69, 255), rgb(255, 133, 89));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.footer .part-1 button {
+  background-color: rgb(3, 33, 70);
+  color: white;
+  border: 1px solid white;
+  padding: 20px 10px 20px 10px;
+}
+.footer .part-1 button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.footer .company {
+  padding: 200px 40px 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .company ul li {
+  color: white;
+  list-style-type: none;
+  line-height: 40px;
+}
+@media screen and (max-width: 970px) {
+  .back-2 .back2-box-flex .line-3 {
+    flex-wrap: wrap;
+  }
+  .back-2 .back2-quote .right .flex h4 {
+    width: 150px;
+  }
+  .back-2 .back2-quote .right .flex p {
+    width: 120px;
+  }
+}
