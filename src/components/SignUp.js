@@ -11,7 +11,7 @@ const SignUp = () => {
     contact: "",
   });
   let navigate = useNavigate();
-  const host = "http://localhost:5000";
+  const host = "https://event-server-4orh.onrender.com";
 
   const onChangetext = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
