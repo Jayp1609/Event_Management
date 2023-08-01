@@ -31,7 +31,7 @@ const Signin = () => {
     if (json.success) {
       //save the auth token and redirect
       localStorage.setItem("token_Event", json.authtoken);
-      navigate("/event");
+      navigate("/");
       window.location.reload(false);
 
       //showalert("Successfully Logged in !!", "success");
