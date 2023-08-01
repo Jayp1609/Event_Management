@@ -22,18 +22,17 @@ function App() {
         <div style={{ paddingTop: "100px" }}>
           <Routes>
             <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
-            {/* <Route path="event" element={<Event />} /> */}
-            <Route path="event/category" element={<Category />} />
-            <Route exact path="gallery" element={<Gallery />} />
-            <Route exact path="signin" element={<Signin />} />
-            <Route exact path="signup" element={<SignUp />} />
-            <Route exact path="userprofile" element={<UserProfile />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/event/category" element={<Category />} />
+            <Route exact path="/gallery" element={<Gallery />} />
+            <Route exact path="/signin" element={<Signin />} />
+            <Route exact path="/signup" element={<SignUp />} />
+            <Route exact path="/userprofile" element={<UserProfile />} />
             {!localStorage.getItem("token_Event") ? (
-              <Route path="event" element={<Signin />} />
+              <Route path="/event" element={<Signin />} />
             ) : (
-              <Route path="event" element={<Event />} />
+              <Route path="/event" element={<Event />} />
             )}
 
             {/* <Route path="*" element={<NoPage />} /> */}
