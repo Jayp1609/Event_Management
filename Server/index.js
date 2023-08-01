@@ -17,6 +17,7 @@ app.use(express.json());
 
 //Routes
 app.use("/event/category", require("./routes/category.js"));
+app.use("/auth", require("./routes/auth.js"));
 
 app.listen(port, () => {
   console.log(`Event server listening on port ${port}`);

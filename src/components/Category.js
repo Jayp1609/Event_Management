@@ -33,7 +33,10 @@ const Category = () => {
   }, [events, location.state.category]);
   return (
     <>
-      <h1 className="heading">Upcoming {location.state.category} events !!!</h1>
+      <div className="heading">
+        <h1>Upcoming {location.state.category} events !!!</h1>
+      </div>
+
       <div className="events-display">
         {[...events].map((info) => {
           return (

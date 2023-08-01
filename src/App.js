@@ -10,6 +10,7 @@ import Category from "./components/Category";
 import Signin from "./components/Signin";
 import SignUp from "./components/SignUp";
 import Footer from "./components/Footer";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   return (
@@ -23,11 +24,18 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
-            <Route path="event" element={<Event />} />
+            {/* <Route path="event" element={<Event />} /> */}
             <Route path="event/category" element={<Category />} />
             <Route exact path="gallery" element={<Gallery />} />
             <Route exact path="signin" element={<Signin />} />
             <Route exact path="signup" element={<SignUp />} />
+            <Route exact path="userprofile" element={<UserProfile />} />
+            {!localStorage.getItem("token_Event") ? (
+              <Route path="event" element={<Signin />} />
+            ) : (
+              <Route path="event" element={<Event />} />
+            )}
+
             {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
         </div>

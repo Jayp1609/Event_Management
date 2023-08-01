@@ -46,7 +46,7 @@ const EventCard = (props) => {
           </div>
         </div>
         <div className="part-4">
-          <button>VIEW IN DETAIL</button>
+          <button>BOOK EVENT</button>
         </div>
       </div>
     </div>

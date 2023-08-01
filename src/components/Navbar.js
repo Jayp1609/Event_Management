@@ -9,7 +9,7 @@ const Navbar = () => {
   const [display, setDisplay] = useState("none");
   const Navigate = useNavigate();
 
-  function displayNavbar() {
+  function display_Vertical_Navbar() {
     if (display === "block") {
       setDisplay("none");
     } else {
@@ -88,15 +88,21 @@ const Navbar = () => {
           </div>
         </div>
         <div className="signin-but">
-          <Link to="/signin">
-            <button>SignIn</button>
-          </Link>
+          {!localStorage.getItem("token_Event") ? (
+            <Link to="/signin">
+              <button>SignIn</button>
+            </Link>
+          ) : (
+            <Link to="/userprofile">
+              <button>Profile</button>
+            </Link>
+          )}
 
           <img
             src={menu}
             alt="#"
             onClick={() => {
-              displayNavbar();
+              display_Vertical_Navbar();
             }}
           ></img>
         </div>
@@ -105,7 +111,7 @@ const Navbar = () => {
         <div className="vertical-navlinks">
           <ul
             onClick={() => {
-              displayNavbar();
+              display_Vertical_Navbar();
             }}
           >
             <li>
