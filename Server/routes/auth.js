@@ -6,9 +6,9 @@ require("dotenv").config();
 const bcrypt = require("bcryptjs");
 var jwt = require("jsonwebtoken");
 const JWT_SECRET = process.env.JWT_SECRET;
-
 var fetchUser = require("../middleware/fetchUser");
-
+const BookEvent = require("../Models/BookEvent");
+const Event = require("../Models/Event");
 //<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>
 //Route-1 create a user (signup)
 
@@ -217,6 +217,8 @@ router.put(
   }
 );
 
+//Route-6 Delete User
+
 router.delete("/deleteuser/:id", async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -232,6 +234,37 @@ router.delete("/deleteuser/:id", async (req, res) => {
         console.log("Error during delete operation  : " + err);
       }
     });
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+//Display Booked Events
+router.get("/bookedEvents", fetchUser, async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+  try {
+    const userId = req.id;
+    const user = await User.findById(userId).select("-password");
+
+    const events = await BookEvent.find({ email: user.email });
+    res.json(events);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+//Route for booked event display
+router.get("/bookedEvents/display/:id", async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+  try {
+    const events = await Event.findById(req.params.id);
+    res.json(events);
   } catch (err) {
     console.log(err);
   }

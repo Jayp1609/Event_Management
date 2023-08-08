@@ -14,7 +14,7 @@
   margin-top: -270px;
   color: white;
 }
-.event-back2 {
+.event-page-back2 {
   margin-top: 60px;
   background-image: linear-gradient(to right, rgb(0, 38, 85), black);
   padding-top: 50px;
@@ -23,19 +23,19 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.event-back2 .left {
+.event-page-back2 .left-back2 {
   padding-bottom: 100px;
 }
-.event-back2 .right {
+.event-page-back2 .right-back2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.event-back2 .right h4 {
+.event-page-back2 .right-back2 h4 {
   font-size: 25px;
   margin-top: 0px;
 }
-.event-back2 .right .hr {
+.event-page-back2 .right-back2 .hr {
   width: 40px;
   height: 4px;
   background-color: rgb(255, 183, 0);
@@ -44,10 +44,10 @@
   margin-left: 5px;
   border-radius: 2px;
 }
-.event-back2 .right .h4-hr-flex {
+.event-page-back2 .right-back2 .h4-hr-flex {
   display: flex;
 }
-.event-back2 .right p {
+.event-page-back2 .right-back2 p {
   width: 250px;
   padding-right: 30px;
   padding-bottom: 50px;
@@ -62,33 +62,33 @@
   padding-bottom: 200px;
   padding-top: 100px;
 }
-.event-back3 .left {
+.event-back3 .left-back3 {
   text-align: center;
   background-color: white;
   padding: 50px 80px 50px 80px;
   color: gray;
 }
-.event-back3 .left img {
+.event-back3 .left-back3 img {
   width: 50px;
   height: 50px;
 }
-.event-back3 .left h1 {
+.event-back3 .left-back3 h1 {
   margin-top: 0px;
   background: linear-gradient(to right, rgb(101, 101, 101), rgb(0, 0, 0), gray);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.event-back3 .left b {
+.event-back3 .left-back3 b {
   background: linear-gradient(to right, rgb(101, 101, 101), rgb(0, 0, 0), gray);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.event-back3 .left h3 b {
+.event-back3 .left-back3 h3 b {
   font-size: 20px;
 }
-.event-back3 .right {
+.event-back3 .right-back3 {
   color: gray;
 }
-.event-back3 .right h1 {
+.event-back3 .right-back3 h1 {
   margin-top: -10px;
 }

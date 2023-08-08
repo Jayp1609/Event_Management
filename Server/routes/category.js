@@ -1,81 +1,58 @@
 const express = require("express");
 const router = express.Router();
-const Category = require("../Models/Category");
-const { body, validationResult } = require("express-validator");
+const fetchUser = require("../middleware/fetchUser");
+const Event = require("../Models/Event");
+const { validationResult } = require("express-validator");
+const BookEvent = require("../Models/BookEvent");
+const User = require("../Models/Auth");
 
-//To add event
-router.post(
-  "/addEvent",
-  [
-    body("address", "Enter a Valid address").isLength({ min: 3 }),
-
-    body("description", "Enter a Valid Email ").isLength({ min: 3 }),
-    body("tag", "Enter a Valid Email ").isLength({ min: 3 }),
-  ],
-  async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
-    const { address, date, description, image_url, price, time, title, tag } =
-      req.body;
-
-    try {
-      const category = new Category({
-        address,
-        date,
-        description,
-        image_url,
-        price,
-        time,
-        title,
-        tag,
-      });
-      const saveEvent = await category.save();
-      res.json(saveEvent);
-    } catch (err) {
-      console.log(err);
-    }
-  }
-);
-
-//Route for wedding event
-router.get("/wedding", async (req, res) => {
+//Route for categorywise event
+router.get("/:category", async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
   try {
-    const details = await Category.find({ tag: "wedding" });
-    res.json(details);
+    const events = await Event.find({ category: req.params.category });
+    res.json(events);
   } catch (err) {
     console.log(err);
   }
 });
 
-//Route for sports event
-router.get("/sports", async (req, res) => {
+//Route to fetch specific event
+router.get("/detail/:eventid", async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
   try {
-    const details = await Category.find({ tag: "sports" });
-    res.json(details);
+    const events = await Event.findById(req.params.eventid);
+    res.json(events);
   } catch (err) {
     console.log(err);
   }
 });
 
-//Route for birthday party
-router.get("/birthday", async (req, res) => {
+//Users booking
+
+router.post("/bookevent/:eventid", fetchUser, async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
   try {
-    const details = await Category.find({ tag: "birthday" });
-    res.json(details);
+    const userId = req.id;
+    const user = await User.findById(userId).select("-password");
+
+    const bookevent = new BookEvent({
+      user_id: userId,
+      event_id: req.params.eventid,
+      email: user.email,
+    });
+
+    const savedEvent = await bookevent.save();
+    res.json(savedEvent);
   } catch (err) {
     console.log(err);
   }

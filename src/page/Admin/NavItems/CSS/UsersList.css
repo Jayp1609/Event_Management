@@ -1,0 +1,31 @@
+.userslist-main {
+  display: flex;
+  justify-content: center;
+}
+.list-head {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+.list-head div {
+  width: 25%;
+}
+.list-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(194, 232, 255);
+}
+.list-display div {
+  width: 25%;
+}

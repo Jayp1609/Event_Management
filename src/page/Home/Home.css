@@ -151,20 +151,20 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.back-2 .back2-quote .left {
+.back-2 .back2-quote .back2-quote-left {
   margin-top: -20px;
 }
-.back-2 .back2-quote .left h2 {
+.back-2 .back2-quote .back2-quote-left h2 {
   line-height: 35px;
   background: linear-gradient(to right, rgb(150, 69, 255), rgb(255, 133, 89));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.back-2 .back2-quote .right .flex {
+.back-2 .back2-quote .back2-quote-right .flex {
   display: flex;
   justify-content: space-between;
 }
-.back-2 .back2-quote .right .flex hr {
+.back-2 .back2-quote .back2-quote-right .flex hr {
   height: 5px;
   width: 50px;
   border: none;
@@ -176,11 +176,11 @@
   );
   float: left;
 }
-.back-2 .back2-quote .right .flex h4 {
+.back-2 .back2-quote .back2-quote-right .flex h4 {
   color: white;
   width: 200px;
 }
-.back-2 .back2-quote .right .flex p {
+.back-2 .back2-quote .back2-quote-right .flex p {
   color: rgb(128, 208, 255);
   width: 400px;
   line-height: 24px;
@@ -198,7 +198,7 @@
   justify-content: space-between;
   border-radius: 15px;
 }
-.back-2 .back2-box2 .flex .left {
+.back-2 .back2-box2 .flex .home-back2-box2-left {
   color: white;
 }
 .back-2 .back2-box2 .flex .right {
@@ -259,5 +259,10 @@
   }
   .back-2 .back2-quote .right .flex p {
     width: 120px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .back-2 .logo img {
+    padding-left: 20px;
   }
 }

@@ -48,4 +48,26 @@
   .image-display {
     grid-template-columns: repeat(1, 1fr);
   }
+  .image-display .image-card {
+    width: 350px;
+  }
+  .image-display .image-card img {
+    width: 350px;
+    height: 400px;
+  }
+  .image-display .image-card div {
+    width: 332.5px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .image-display .image-card {
+    width: 250px;
+  }
+  .image-display .image-card img {
+    width: 250px;
+    height: 400px;
+  }
+  .image-display .image-card div {
+    width: 237.5px;
+  }
 }

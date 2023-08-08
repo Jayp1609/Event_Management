@@ -1,5 +1,6 @@
 import React from "react";
 import "./CSS/EventCard.css";
+import { Link } from "react-router-dom";
 
 const EventCard = (props) => {
   return (
@@ -10,7 +11,7 @@ const EventCard = (props) => {
           <img src={props.info.image_url} alt="#" />
         </div>
         {/* .......2...... */}
-        <div className="part-2">
+        <div className="card-part-2">
           <div>
             <b>{props.info.title}</b>
           </div>
@@ -21,8 +22,8 @@ const EventCard = (props) => {
             <b>Tickets from ${props.info.price}</b>
           </div>
         </div>
-        <div className="part-3">
-          <div className="flex">
+        <div className="card-part-3">
+          <div className="part3-flex">
             <div>
               <img
                 src="https://cdn-icons-png.flaticon.com/128/992/992700.png"
@@ -33,7 +34,7 @@ const EventCard = (props) => {
               <b>Start {props.info.time}</b>
             </div>
           </div>
-          <div className="flex">
+          <div className="part3-flex">
             <div>
               <img
                 src="https://cdn-icons-png.flaticon.com/128/484/484167.png"
@@ -45,8 +46,10 @@ const EventCard = (props) => {
             </div>
           </div>
         </div>
-        <div className="part-4">
-          <button>BOOK EVENT</button>
+        <div className="card-part-4">
+          <Link to={`/event/detail/${props.info._id}`}>
+            <button>VIEW DETAILS</button>
+          </Link>
         </div>
       </div>
     </div>

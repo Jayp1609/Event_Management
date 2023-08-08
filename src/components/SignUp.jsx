@@ -87,6 +87,7 @@ const SignUp = () => {
               onChangetext(e);
             }}
             minLength={10}
+            maxLength={10}
             required
           />
           <br />

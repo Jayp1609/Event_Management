@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import EventCard from "../components/EventCard";
+import EventCard from "./EventCard";
 import "./CSS/Category.css";
 import Footer from "./Footer";
 

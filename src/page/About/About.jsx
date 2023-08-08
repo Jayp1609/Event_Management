@@ -33,8 +33,8 @@ const About = () => {
       </div>
 
       {/* .........Next Part........ */}
-      <div className="event-back2">
-        <div className="left">
+      <div className="event-page-back2">
+        <div className="left-back2">
           <div>We are harmoni</div>
           <h1>
             No.1 Events <br />
@@ -42,7 +42,7 @@ const About = () => {
           </h1>
           <div>get started!</div>
         </div>
-        <div className="right">
+        <div className="right-back2">
           {/* ......1...... */}
           <div>
             <div className="h4-hr-flex">
@@ -84,7 +84,7 @@ const About = () => {
 
       {/* .......Next........ */}
       <div className="event-back3">
-        <div className="left">
+        <div className="left-back3">
           <div>
             <div>
               <img src={logo} alt="#" />
@@ -99,7 +99,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="right">
+        <div className="right-back3">
           <p>harmoni award</p>
           <h1>Our Winning Awards</h1>
           {/* .....1...... */}

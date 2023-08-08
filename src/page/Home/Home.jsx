@@ -157,7 +157,7 @@ const Home = () => {
 
         {/* ...........after box.......... */}
         <div className="back2-quote">
-          <div className="left">
+          <div className="back2-quote-left">
             <h2>
               Harmony Event
               <br />
@@ -176,7 +176,7 @@ const Home = () => {
               lives...
             </h2>
           </div>
-          <div className="right">
+          <div className="back2-quote-right">
             {/* .....1.... */}
             <div className="flex">
               <div>
@@ -230,7 +230,7 @@ const Home = () => {
         {/* ..........next box......... */}
         <div className="back2-box2">
           <div className="flex">
-            <div className="left">
+            <div className="home-back2-box2-left">
               <p>Request early access to get started</p>
               <h3>
                 Register today and start exploring the endless possibilities

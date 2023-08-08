@@ -50,7 +50,7 @@ const Contact = () => {
             <br />
             <br />
             <br />
-            <button>SEND</button>
+            <button disabled>SEND</button>
           </form>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
