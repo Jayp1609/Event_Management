@@ -4,7 +4,7 @@ import "./CSS/Navbar.css";
 import logo from "../HarmoniLogo.png";
 import menu from "../menu.png";
 import { useNavigate } from "react-router-dom";
-import logout from "./Images/logout.png";
+
 
 const Navbar = () => {
   const [display, setDisplay] = useState("none");
