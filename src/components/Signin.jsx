@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Signin = () => {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   let navigate = useNavigate();
-  const host = "https://filthy-cyan-slacks.cyclic.app";
+  const host = "https://event-server-4orh.onrender.com";
 
   const HandleonChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
