@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Category = () => {
   const location = useLocation();
-  const host = "http://localhost:5000";
+  const host = "https://event-server-4orh.onrender.com";
   const [events, setEvents] = useState([]);
 
   useEffect(() => {

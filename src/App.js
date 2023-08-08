@@ -55,6 +55,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+<<<<<<< HEAD
 
             {!localStorage.getItem("token_Event") ? (
               <Route path="event" element={<Signin />} />
@@ -66,6 +67,9 @@ function App() {
               </Route>
             )}
 
+=======
+            <Route path="event/category" element={<Category />} />
+>>>>>>> da07374dac22a9b144909641461029779ce1937b
             <Route exact path="gallery" element={<Gallery />} />
             <Route exact path="signin" element={<Signin />} />
             <Route exact path="signup" element={<SignUp />} />

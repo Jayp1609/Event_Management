@@ -9,7 +9,7 @@ const UserProfile = () => {
     email: "",
     contact: "",
   });
-  const host = "http://localhost:5000";
+  const host = "https://event-server-4orh.onrender.com";
 
   //fetch user information
   const getuser = async () => {
