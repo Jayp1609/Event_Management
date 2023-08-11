@@ -1,0 +1,88 @@
+.event-main {
+  /* background-image: linear-gradient(black, rgb(30, 30, 30), black); */
+  background-image: linear-gradient(to right, rgb(0, 38, 85), black);
+}
+.event-main .back-image {
+  width: 100%;
+}
+.event-main .back-image img {
+  width: 100%;
+  height: 350px;
+  z-index: 0;
+}
+.image-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  margin-top: -270px;
+  color: white;
+}
+.event-main .event-navbar {
+  padding: 100px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  overflow: scroll;
+}
+.event-main .event-navbar ul li {
+  display: inline;
+  color: white;
+  padding-right: 50px;
+}
+.event-main .event-navbar ul li b {
+  border: 1px solid rgb(1, 49, 108);
+  padding: 10px;
+}
+.event-main .flex {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 100px 0px;
+}
+.event-main .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 30px;
+}
+.event-main .category {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+.event-main .category :hover {
+  cursor: pointer;
+}
+.event-main .category img {
+  width: 300px;
+  height: 250px;
+}
+.event-main .category div b {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  color: rgb(0, 52, 129);
+}
+.bookevent-btn {
+  background-color: rgb(63, 63, 63);
+  color: white;
+}
+.bookevent-btn:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(189, 189, 189);
+}
+@media only screen and (max-width: 970px) {
+  .event-main .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 720px) {
+  .event-main .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .event-main .event-navbar ul li {
+    padding-right: 10px;
+    font-size: 10px;
+  }
+}

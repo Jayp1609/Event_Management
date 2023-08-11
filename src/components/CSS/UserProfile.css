@@ -1,0 +1,40 @@
+.user-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+  background-color: #d2afaf;
+  background-image: linear-gradient(to right, #00052d, #000000);
+}
+.user-form {
+  box-shadow: 2px 2px 2px rgb(112, 112, 112);
+  width: 400px;
+  padding: 20px 0px 60px 0px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.user-form h2 {
+  margin-top: 0px;
+}
+.user-form input {
+  width: 60%;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+.user-form button {
+  width: 84%;
+  border: none;
+  background-color: rgb(138, 0, 0);
+  border: 1px solid rgb(138, 0, 0);
+  color: white;
+  height: 35px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.user-form button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(138, 0, 0);
+}

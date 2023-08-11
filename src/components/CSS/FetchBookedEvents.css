@@ -1,0 +1,27 @@
+.display-booked-events {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(0, 38, 85), black);
+}
+.display-booked-events h1 {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 50px;
+}
+.display-grid {
+  padding: 50px 0px 100px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+@media only screen and (max-width: 1100px) {
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .display-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

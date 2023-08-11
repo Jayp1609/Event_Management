@@ -1,0 +1,33 @@
+.booked-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.booked-display {
+  width: 90%;
+}
+.booked-display table {
+  width: 100%;
+  text-align: center;
+
+  font-size: 20px;
+}
+.booked-display table,
+th,
+tr {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.booked-display table th {
+  background-color: black;
+  color: white;
+}
+.booked-display table tr th,
+td {
+  padding: 10px 0px 10px 0px;
+}
+.booked-display table tr td {
+  background-color: rgb(194, 232, 255);
+}

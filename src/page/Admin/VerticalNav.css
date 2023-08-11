@@ -1,0 +1,18 @@
+.verticalnav-main {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.verticalnav-main ul {
+  list-style-type: none;
+  padding-top: 100px;
+}
+.verticalnav-main li {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.verticalnav-main b:hover {
+  cursor: pointer;
+  color: #408ec6;
+}

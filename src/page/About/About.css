@@ -1,0 +1,94 @@
+.main-about .back-image {
+  width: 100%;
+}
+.main-about .back-image img {
+  width: 100%;
+  height: 450px;
+  z-index: 0;
+}
+.image-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  margin-top: -270px;
+  color: white;
+}
+.event-page-back2 {
+  margin-top: 60px;
+  background-image: linear-gradient(to right, rgb(0, 38, 85), black);
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.event-page-back2 .left-back2 {
+  padding-bottom: 100px;
+}
+.event-page-back2 .right-back2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.event-page-back2 .right-back2 h4 {
+  font-size: 25px;
+  margin-top: 0px;
+}
+.event-page-back2 .right-back2 .hr {
+  width: 40px;
+  height: 4px;
+  background-color: rgb(255, 183, 0);
+  border: none;
+  margin-top: 15px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+.event-page-back2 .right-back2 .h4-hr-flex {
+  display: flex;
+}
+.event-page-back2 .right-back2 p {
+  width: 250px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  line-height: 28px;
+  margin-top: -10px;
+}
+.event-back3 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to right, rgb(0, 38, 85), black);
+  padding-bottom: 200px;
+  padding-top: 100px;
+}
+.event-back3 .left-back3 {
+  text-align: center;
+  background-color: white;
+  padding: 50px 80px 50px 80px;
+  color: gray;
+}
+.event-back3 .left-back3 img {
+  width: 50px;
+  height: 50px;
+}
+.event-back3 .left-back3 h1 {
+  margin-top: 0px;
+  background: linear-gradient(to right, rgb(101, 101, 101), rgb(0, 0, 0), gray);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.event-back3 .left-back3 b {
+  background: linear-gradient(to right, rgb(101, 101, 101), rgb(0, 0, 0), gray);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.event-back3 .left-back3 h3 b {
+  font-size: 20px;
+}
+.event-back3 .right-back3 {
+  color: gray;
+}
+.event-back3 .right-back3 h1 {
+  margin-top: -10px;
+}

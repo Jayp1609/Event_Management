@@ -1,0 +1,37 @@
+.footer {
+  background-color: rgb(3, 33, 70);
+  padding: 40px;
+}
+.footer .part-1 {
+  text-align: center;
+}
+.footer .part-1 h1 {
+  font-size: 50px;
+  background: linear-gradient(to right, rgb(150, 69, 255), rgb(255, 133, 89));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.footer .part-1 button {
+  background-color: rgb(3, 33, 70);
+  color: white;
+  border: 1px solid white;
+  padding: 20px 10px 20px 10px;
+}
+.footer .part-1 button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.footer .company {
+  padding: 200px 40px 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .company ul {
+  margin-top: -20px;
+}
+.footer .company ul li {
+  color: white;
+  list-style-type: none;
+  line-height: 40px;
+}

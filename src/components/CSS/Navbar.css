@@ -1,0 +1,115 @@
+.main-navbar {
+  /* background-color: rgb(0, 0, 37); */
+  background-image: linear-gradient(to right, rgb(0, 38, 85), black, black);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.symbol-links {
+  display: flex;
+}
+.nav-links {
+  height: 100px;
+}
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  padding-left: 100px;
+  margin-top: 0px;
+}
+.nav-links li {
+  padding-left: 30px;
+  list-style: none;
+  color: rgb(82, 82, 82);
+  font-size: 15px;
+}
+
+.signin-but {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding-right: 100px;
+}
+.signin-but button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 37);
+}
+.signin-but button:hover {
+  cursor: pointer;
+}
+.signin-but img {
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.signin-but img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content .flex {
+  display: flex;
+  flex-direction: column;
+}
+.vertical-navbar {
+  background-color: rgb(0, 0, 0);
+  margin-top: -16px;
+}
+.vertical-navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px 40px 0px;
+}
+.vertical-navbar ul li {
+  list-style-type: none;
+  padding-top: 30px;
+  font-size: 30px;
+}
+.vertical-navbar button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 37);
+}
+.vertical-navbar button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 970px) {
+  .nav-links {
+    display: none;
+  }
+  .signin-but button {
+    display: none;
+  }
+  .signin-but img {
+    display: block;
+  }
+}

@@ -1,0 +1,13 @@
+.dash-main {
+  margin-top: 0px;
+}
+.left {
+  width: 220px;
+  position: fixed;
+  height: 100%;
+  background-color: black;
+  margin-top: -100px;
+}
+.right {
+  margin-left: 220px;
+}
